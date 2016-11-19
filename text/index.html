@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title></title>
+<link rel="stylesheet" href="dist/css/bootstrap.min.css">
+<link href="css/flexy-menu.css" rel="stylesheet">
+<link href="css/font-awesome.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<script src="js/JavaScript.js"  type="text/javascript"></script>
+<script src="dist/js/jquery-3.0.0.min.js"></script>
+<script src="dist/js/bootstrap.min.js"></script>
+<style>
+body{background: #fff url(img/texture.png) repeat;margin: 0;padding: 0;}
+.flexy-menu{margin: 20px 0 10px 0;}
+</style>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/flexy-menu.js"></script>
+<script type="text/javascript">$(document).ready(function(){$(".flexy-menu").flexymenu({speed: 400});});</script>
+</head>
+<body>
+<div class="cover" id="ggg"></div>
+<div class="content">
+	<ul class="flexy-menu orange">
+		<li class="active"><a href=""><i class="icon-heart">
+		</i>首页</a></li>
+		<li><a href=""><i class="icon-cogs"></i>Services</a></li>
+		<li><a href="#"><i class="icon-th"></i>友情链接</a><ul>
+            <li><a href="">豆瓣读书</a></li>
+			<li><a href="">推理小说专区</a></li>
+			<li><a href="">书店</a>
+              <ul>
+				<li><a href="">当当网</a></li>
+				<li><a href="">亚马逊</a></li>
+				<li><a href="">孔夫子</a></li>
+				<li><a href="">京东商城</a></li>
+            
+			  </ul>
+			</li>
+			<li><a href="">文学吧</a></li>
+			<li><a href=""></a></li>
+		</ul>
+		</li>
+		<li><a href=""><i class="icon-bullhorn"></i>论坛</a></li>
+		<li data-toggle="modal" data-target="#mymodal-data"><a href="#"><i class="icon-signin"></i>注册</a></li>
+        <li data-toggle="modal" data-target="#mymodal-data1"><a href="#"><i class="icon-key"></i>登录</a></li>
+        <li onclick="night()"><a href="#"><i class="icon-eye-open"></i>夜间模式</a></li>
+         <li><input class="sb_input" type="text"/><input class="sb_search" type="submit" value=""/></li>
+				
+            
+	</ul>
+    
+<div class="all">
+    <div class="col">
+        <div class="squ1">
+            <img class="img-resp" src="img/desktop-128.png" >
+            <div class="shade-div"></div>
+        </div>
+    </div>   
+    <div class="col">
+        <div class="squ2">
+            <img class="img-resp" src="img/book-128.png" >
+            <div class="shade-div"></div>
+        </div>
+    </div>
+     <div class="col-double">
+        <div class="squ">
+            <img class="img-resp1" src="img/market-128.png" >
+            <div class="shade-div"></div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="squ3">
+            <img class="img-resp" src="img/joystick-128.png" >
+            <div class="shade-div"></div>
+        </div>
+        </div>
+    <div class="col">
+        <div class="squ4">
+            <img class="img-resp" src="img/film-128.png" >
+            <div class="shade-div"></div>
+        </div>
+    </div>   
+    <div class="col">
+        <div class="squ5">
+            <img class="img-resp" src="img/mail-128.png" >
+            <div class="shade-div"></div>
+        </div>
+    </div> 
+    <div class="col">
+        <div class="squ6">
+            <img class="img-resp" src="img/market-128.png" >
+            <div class="shade-div"></div>
+        </div>
+    </div>
+     <div class="col-eight">
+        <div class="squ2">
+            <img class="img-resp1" src="img/joystick-128.png" >
+            <div class="shade-div1" id="change1">
+               <img class="img-resp2" src="img/1.jpg" >
+            </div>
+            <div class="shade-div1" id="change2">
+               <img class="img-resp2" src="img/2.jpg" >
+            </div>
+            <div class="shade-div1" id="change3">
+               <img class="img-resp2" src="img/3.jpg" >
+            </div>
+            <div class="shade-div1" id="change4">
+               <img class="img-resp2" src="img/4.jpg" >
+            </div>
+            <div class="shade-div1" id="change5">
+               <img class="img-resp2" src="img/5.jpg" >
+        </div>
+    </div>
+  </div>    
+</div>
+   <div class="foot">
+       
+</div> 
+</div>  
+<script type="text/javascript">
+function updata(){
+function updata0() {  
+ $("#change1").css("opacity","1");
+ $("#change1").css("right","0");
+}
+function updata1() {  
+ $("#change1").css("right","100%");
+ $("#change1").css("opacity","0");
+}
+$(document).ready(function(){  
+ setTimeout(updata0, 1000);
+}); 
+$(document).ready(function(){  
+ setTimeout(updata1, 2000);
+});
+ function updata2() {  
+ $("#change2").css("opacity","1");
+ $("#change2").css("right","0");
+}
+function updata3() {  
+ $("#change2").css("right","100%");
+ $("#change2").css("opacity","0");
+}
+$(document).ready(function(){  
+ setTimeout(updata2, 3000);
+}); 
+$(document).ready(function(){  
+ setTimeout(updata3, 4000);
+});
+function updata4() {  
+ $("#change3").css("opacity","1");
+ $("#change3").css("right","0");
+}
+function updata5() {  
+ $("#change3").css("right","100%");
+ $("#change3").css("opacity","0");
+}
+$(document).ready(function(){  
+ setTimeout(updata4, 5000);
+}); 
+$(document).ready(function(){  
+ setTimeout(updata5, 6000);
+});
+    
+function updata6() {  
+ $("#change4").css("opacity","1");
+ $("#change4").css("right","0");
+}
+function updata7() {  
+ $("#change4").css("right","100%");
+ $("#change4").css("opacity","0");
+}
+$(document).ready(function(){  
+ setTimeout(updata6, 7000);
+}); 
+$(document).ready(function(){  
+ setTimeout(updata7, 9000);
+}); 
+function updata8() {  
+ $("#change5").css("opacity","1");
+ $("#change5").css("right","0");
+}
+function updata9() {  
+ $("#change5").css("right","100%");
+ $("#change5").css("opacity","0");
+}
+$(document).ready(function(){  
+ setTimeout(updata8, 10000);
+}); 
+$(document).ready(function(){  
+ setTimeout(updata9, 11000);
+});
+ }
+ $(document).ready(function(){  
+ setInterval(updata, 12000);
+});  
+ function night() {      
+$(".cover").css("display","block");
+$("body").removeClass(".cover");
+$(this).addClass(".cover");
+}   
+
+</script>
+
+ 
+
+</body>
+    
+ <div class="modal fade" id="mymodal-data" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">用户注册</h4>
+            </div>
+            <div class="modal-body">
+                
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label for="inputName" class="col-sm-2 control-label">用户名：</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="inputName" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword" class="col-sm-2 control-label">密码：</label>
+                            <div class="col-sm-8">
+                                <input type="password" class="form-control" id="inputPassword" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <div class="checkbox">
+                           <label><input type="checkbox"> 我同意以上协议</label>
+                                </div>
+                            </div>
+                        </div>
+                     </form>
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="submit" class="btn btn-primary">注册</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="mymodal-data1" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">用户登录</h4>
+            </div>
+            <div class="modal-body">
+                
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label for="inputName1" class="col-sm-2 control-label">用户名：</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="inputName1" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword1" class="col-sm-2 control-label">密码：</label>
+                            <div class="col-sm-8">
+                                <input type="password" class="form-control" id="inputPassword1" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword1" class="col-sm-2 control-label">验证码：</label>
+                            <div class="col-sm-2">
+                                <input type="text" class="form-control" id="input1" placeholder="">
+                            </div>
+                            <div class="col-sm-4">
+                                <img class="img-responsive yzm" src="images/logo_btn.png" alt="验证码显示失败">
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <div class="checkbox">
+                                    <label>
+                    <input type="checkbox">记住密码</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-default" data-toggle="modal" data-dismiss="modal" data-target="#mymodal-data2" type="button">忘了密码</button>
+                            <button class="btn btn-default" data-toggle="modal" data-dismiss="modal" data-target="#mymodal-data" type="button">前往注册</button>
+
+                        </div>
+                    </form>
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="submit" class="btn btn-primary">登录</button>
+            </div>
+        </div>
+    </div>
+</div>   
+    
+    
+    
+    
+    
+    
+    
+</html>
