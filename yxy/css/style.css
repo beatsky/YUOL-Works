@@ -282,14 +282,15 @@ a{
 	font-size: 18.66px;
     color: #fff;
 }
-@media screen and (max-width: 1003px){
-.top,.foot{width: 1003px;}
-.mark{margin-left: 820px;}
-}
 @media screen and (max-width: 1088px){
 .top1,.foot1{width: 1088px;}
 .mark{margin-left: 860px;}
 }
+@media screen and (max-width: 1003px){
+.top,.foot{width: 1003px;}
+.mark{margin-left: 820px;}
+}
+
 /*list*/
 .main-l{
 	width: 1088px;
