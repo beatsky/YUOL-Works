@@ -279,7 +279,10 @@ a{
 .top,.foot{width: 1003px;}
 .mark{margin-left: 820px;}
 }
-
+@media screen and (max-width: 1008px){
+.top1,.foot1{width: 1003px;}
+.mark{margin-left: 820px;}
+}
 /*list*/
 .main-l{
 	width: 1088px;
