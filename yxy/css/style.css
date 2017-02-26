@@ -89,7 +89,7 @@ a{
 }
 .nav{
     height: 57px;
-    width: 900px;
+    width: 950px;
     margin: 0 auto;
     background:#dadbdd;
 }
@@ -128,6 +128,7 @@ a{
 .appear:hover>ul{ 
 	display:block;
 }
+.lcyx a{width: 150px !important;}
 .main{
 	width: 1003px;
 	height: 1332px;
@@ -163,8 +164,7 @@ a{
 .box{
 	width: 172px;
 	height: 197px;
-	box-shadow:  0 0 6px #595554;
-	behavior: url(../js/ie-css3.htc); 
+	box-shadow:  0 0 6px #595554; 
 	margin-left: 60px;
 	margin-bottom: 40px;
 	margin-top: 10px;
@@ -173,8 +173,8 @@ a{
 .box p{
 	text-align: center;
 	padding: 5px 15px;
-	font-size: 18.66px;
-	height: 62px;
+	font-size: 16px;
+	height: 66px;
 	overflow: hidden;
 }
 .box a{
@@ -189,9 +189,12 @@ a{
 	border: none;
 	margin: 30px 35px;
 }
-.dt{
+.mid-div{
 	width: 884px;
 	margin: 0 auto;
+}
+.dt{
+	width: 630px;
 	margin-top: 40px;
 	
 }
@@ -206,11 +209,11 @@ a{
 
 }
 .dt a{
-	font-size: 18.66px;
+	font-size: 16px;
 	font-family: SimSun;
 }
 .dt ul span{
-	font-size: 18.66px;
+	font-size: 16px;
 	float: right;
 }
 .dt h3{
@@ -222,11 +225,30 @@ a{
     font-size: 18.66px;
 }
 
-.more{
+.more,.dt-more{
 	float: right;
     height: 35px;
     width: 20px;
     margin-right: 750px;
+}
+.dt-more{margin-right: 490px;}
+.yxlj{
+	background: #f2f3f3;
+	width: 155px;
+	float: right;
+	height: 269px;
+    margin-top: -350px;
+    border: 1px solid #ccc;
+}
+.yxlj div{
+	height: 40px;
+	width: 123px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+.yxlj div a{
+	font-size: 10px;
+	margin-top: -20px !important;
 }
 .other{
 	position: absolute;
@@ -248,47 +270,33 @@ a{
     font-size: 18.66px;
 }
 .foot,.foot1{
-	height: 210px;
+	height: 160px;
 	width: 100%;
-	background: rgba(1,1,1,0.7);
+	background: rgb(1,1,1);
+	opacity: 0.7;
 	position: absolute;
 	z-index: 999;
 	margin-top: -160px;
 }
-.foot>p{
+.foot p{
 	text-align: center;
 	color: #fff;
-	line-height: 32px;
+	line-height: 25px;
 	font-size: 18.66px;
 	margin-top: 34px;
 }
-.foot1>p{
+.foot1 p{
 	text-align: center;
 	color: #fff;
-	line-height: 32px;
+	line-height: 25px;
 	font-size: 18.66px;
 	margin-top: 34px;
-}
-.mark{
-	height: 130px;
-	width: 183px;
-	background: #e8a113;
-	margin-left: 1046px;
-	margin-top: -155px;
-}
-.mark p{
-	text-align: center;
-	padding-top: 47px;
-	font-size: 18.66px;
-    color: #fff;
 }
 @media screen and (max-width: 1088px){
 .top1,.foot1{width: 1088px;}
-.mark{margin-left: 860px;}
 }
 @media screen and (max-width: 1003px){
 .top,.foot{width: 1003px;}
-.mark{margin-left: 820px;}
 }
 
 /*list*/
