@@ -124,7 +124,7 @@ a{
 .lcyx a{width: 150px !important;}
 .main{
 	width: 1003px;
-	height: 1332px;
+	height: 1352px;
 	margin: 0 auto;
 	clear: both;
 	background: #f6f6f6;
@@ -191,7 +191,6 @@ a{
 .dt{
 	width: 630px;
 	margin-top: 40px;
-	
 }
 .dt li{
 	list-style: none;
@@ -215,8 +214,8 @@ a{
 .dt h3{
 	color: #17689d;
     margin-left: 13px;
-    margin-top: 0;
-    margin-bottom: 14px;
+    margin-top: 54px;
+    margin-bottom: 20px;
     line-height: 28px;
     font-size: 18.66px;
 }
@@ -232,8 +231,8 @@ a{
 	background: #f2f3f3;
 	width: 155px;
 	float: right;
-	height: 370px;
-    margin-top: -350px;
+	height: 360px;
+    margin-top: -370px;
     border: 1px solid #ccc;
 }
 .yxlj div{
@@ -254,7 +253,7 @@ a{
 	height: 64px;
 	width: 884px;
 	margin: 0 auto;
-	border-top:2px solid #eec677;
+	border-top:1px solid #71716f;
 	bottom: 160px;
 	left: 60px;
 }
@@ -266,7 +265,7 @@ a{
 
 }
 .other a{
-    font-size: 18.66px;
+    font-size: 16px;
 }
 .other a:hover{color: red;}
 .foot,.foot1{
