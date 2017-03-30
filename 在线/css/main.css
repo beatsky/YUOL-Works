@@ -1,0 +1,71 @@
+.clean-main-menu{
+    background-color: transparent;
+    border: 0 none;
+    border-radius: 0;
+    position: fixed;
+    width: 100%;
+    padding: 15px 0;
+    margin-bottom: 0;
+    z-index: 100000;
+    -webkit-transition: all .35s;
+       -moz-transition: all .35s;
+        -ms-transition: all .35s;
+         -o-transition: all .35s;
+            transition: all .35s;
+}
+
+header.clean-page-header .clean-main-menu{
+	position: relative;
+}
+
+.clean-main-menu .navbar-brand{
+    padding: 30px 0;
+}
+
+.clean-main-menu .navbar-nav{
+    float: right;
+    padding: 30px 0;
+}
+
+.clean-main-menu .navbar-nav li a{
+	color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 30px !important;
+    
+}
+
+.clean-main-menu .navbar-nav li a:hover,
+.clean-main-menu .navbar-nav li.active a{
+    color: #66D37E;
+}
+
+.clean-main-menu .navbar-nav li a:focus{
+	background-color: transparent;
+}
+
+/* Minified Menu */
+.clean-main-menu.minified{
+	background-color: rgba(255, 255, 255, 1);
+	padding: 0;
+	position: fixed;
+	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0), 0px 2px 10px 0px rgba(0, 0, 0, 0.08);
+}
+
+header.clean-page-header .clean-main-menu.minified{
+	position: fixed;
+}
+@media screen and (max-width: 767px){
+.clean-main-menu .navbar-nav{
+    float: none;
+    padding-bottom: 100%
+}
+.clean-main-menu.minified{
+    background-color: rgba(0,0,0,0);
+    box-shadow: none;
+}    
+
+}

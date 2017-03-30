@@ -1,0 +1,302 @@
+::selection {
+  color: #fcfcfc;
+  background: #66D37E;
+}
+@charset "utf-8";
+*{font-family: Adobe 黑体 Std;}
+li,ul,h2{list-style: none;padding:0;margin: 0;}
+#goTopBtn{
+	position: fixed;
+	bottom:35px;
+	height:36px;
+	right: 15px!important;
+	cursor:pointer;
+	display:none;
+}
+#goTopBtn-1{
+	position: absolute;
+	bottom:25px;
+	width: 6%;
+	margin:0 47%;
+	cursor:pointer;
+}
+#yuol{opacity: 0;}
+.yuol{
+	font-size: 3em;
+	opacity: 1;
+}
+.font-c{
+	color: #fff!important;
+}
+.font-c1{
+	color: black!important;
+}
+.font-c1:hover{
+	color: #66D37E!important;
+}
+#nav-bar{
+    background:rgba(0,0,0,0);
+    margin-bottom: 0;
+    margin-top: 0;
+}
+#navbar li{
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+}
+#navbar li a:hover{
+    background: rgba(0,0,0,0);
+}
+
+.online{
+	width: 100%;
+}
+.zxjj{
+	padding: 6em 0em 2em 0em;
+}
+.title-1{
+	padding: 2em 0em 2em 0em;
+	width: 100%;
+	text-align: center;
+}
+.photo-1{
+	width: 50%;
+}
+.info-1{
+	font-size: 2em;
+	font-family: Microsoft YaHei;
+	font-weight: bold;
+}
+.info-1 p{
+	margin-top: 2em;
+}
+#zxdt{
+	padding: 3em 0em 5em 0em;
+}
+.news{
+	height: 15em;
+	overflow: hidden;
+	margin-bottom: 5em;
+}
+.date{
+	width: 6em;
+	height: 7em;
+	border-radius: 5px;
+	border: 1.5px solid black;
+	margin: 0 auto; 
+}
+.day{font-size: 3em;font-weight: bold;}
+.mou{font-size: 1em;}
+.xw{
+	margin: 2em 10% 0 10%;
+	font-size: 1.1em;
+}
+.xw a{
+	color: black;
+	font-size: 1.3em;
+}
+.xw a:hover{
+	color: #428bca;
+}
+.more{
+	margin: 3em auto;
+    
+}
+#zxdjt{
+	background: #f6f7f7;
+	width: 100%;
+	float: left;
+	padding: 3em 0em 0em 0em;
+}
+.zbjs{
+    width: 15%;
+    float: left;
+    padding-top: 15%;
+    position: relative;
+    margin: 0 5%;
+}
+.zb{
+    position: absolute;
+    float: left;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.tdjs{
+	padding: 6em 0 2em 0;
+	
+}
+.zpzs{
+	padding: 2em 0 0 0;
+	background: #f6f7f7;
+	float: left; 
+	width: 100%;
+}
+.works{
+	background: #ccc;
+	padding: 2em 0.5em 2em 0.5em;
+	margin-bottom: 1em;
+}
+.contact{
+	width: 100%;
+	position: relative;
+	background: #283849;
+    float: left;
+}
+.tj{margin-top: 22px;}
+
+.foot{
+	background: #17283b;
+	width: 100%;
+	position: relative;
+    float: left;
+}
+.tbiao{
+	background: url(../images/db.png);
+}
+.carousel-inner{background: #f6f7f7;}
+.carousel-control.right,
+.carousel-control.left{background-image:none;}
+@media screen and (max-width: 1200px){
+#goTopBtn-1{
+	display: none;
+}
+}
+@media screen and (max-width: 767px){
+#navbar{
+	background:;
+}
+#navbar ul li a{
+	color: #747474;
+	font-size: 20px;
+	text-align: center;
+}
+#navbar ul li a:hover {color: #428bca;font-size: 25px;}
+.title-1{
+	padding: 1em 0em 1em 0em;
+}
+.photo-1{
+	width: 100%;
+}
+.info-1{
+	font-size: 1em;
+}
+.info-2{
+	display: none;
+}
+.zbjs{
+    width: 40%;
+    padding-top: 40%;
+    margin: 0 5%;
+}
+.news{
+	width: 80%;
+	margin: 0 20% 50px 10%;
+}
+.xw p a{font-size: 0.8em;}
+.more{
+	position: relative;
+	width: 30%;
+}
+.tj{margin-top: 0;}
+}
+
+
+
+/*list*/
+.posi-1{
+	padding: 2em 0;
+}
+.posi-2{
+	padding: 14em 0 3em 0;
+}
+.list-1{
+	padding: 0em 0;
+}
+.list-1 li{
+	width: 100%;
+	height: 5em;
+	line-height: 5em;
+	background: #eff0f0;
+    margin-bottom: 1em;
+    overflow: hidden;
+	text-overflow: ellipsis;
+	white-space:nowrap;
+}
+.list-1 li:hover{
+	background: #646c6;
+}
+.list-1 li a{
+	color: black;
+	position: relative;
+	font-size: 1.5em;
+	width: 80%;
+	margin: 0 5%;
+	height: 100%;
+}
+.list-1 li a:hover{
+	color: #428bca;
+	font-weight: bold;
+	text-decoration: none;
+}
+.list-1 span{
+	color: black;
+	font-size: 1.5em;
+	float: right;
+	margin: 0 5%;
+}
+.menu{
+	width: 33.3%;
+	padding-top: 25%;
+	padding-bottom: 0;
+	position: relative;
+    min-height: 1px;
+    float: left;
+    margin: 0 !important;
+}
+.squ1{
+    background: #0cc977;
+}
+.squ2{
+    background: #ff274f;
+}
+.squ3{
+    background: #8c29e4;
+}
+.menu-1{
+    position: absolute;
+    float: left;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: rgba(1,1,1,0.6);
+    transition: all 300ms ease-in-out;
+    margin-bottom: 10px;
+
+}
+.menu-1:hover{
+    opacity: 1;
+}
+@media screen and (max-width: 767px){
+.posi-1{
+	padding: 1em 0;
+	font-size: 1.2em;
+}
+.posi-2{
+	padding: 10em 0 3em 0;
+	font-size: 1.2em;
+	color: black;
+}
+
+}
+
+/*content*/
+.cont-1{
+	backgroun: rgba(1,1,1,0.6);
+	font-size: 1.5em;
+}
+
