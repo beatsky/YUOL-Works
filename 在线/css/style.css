@@ -115,6 +115,14 @@ li,ul,h2{list-style: none;padding:0;margin: 0;}
     position: relative;
     margin: 0 5%;
 }
+.zbjs a{
+    position: absolute;
+    margin:35% 15%;
+    color: #fff;
+    font-size: 2.5em;
+    
+}
+.zbjs a:hover{text-decoration: none;}
 .zb{
     position: absolute;
     float: left;
