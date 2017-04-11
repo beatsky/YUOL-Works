@@ -250,7 +250,3 @@ $(window).scroll(function(){
    $("#goTopBtn-1").css("display","block");
    }
  })*/
- $("#goTopBtn-1").click(function(){
-   var sc=$(window).scrollTop();
-   $('body,html').animate({scrollTop:610},500);
- })
