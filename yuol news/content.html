@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1, IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=9">
+  <meta name="force-rendering" content="webkit">
+  <!-- 引入样式 -->
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	  <div id="app">
+	   	<!--头部,导航栏-->	
+   		  	<el-row>
+				
+					<el-col :xs="4" :sm="12" :md="12" :lg="12" :xl="12">
+						<img class="logo" src="./img/logo.jpg">
+					</el-col>
+					<el-col :xs="20" :sm="12" :md="12" :lg="12" :xl="12">
+						<el-form :inline="true" :model="formInline" class="demo-form-inline search"  method="post" action="">
+					 	  <el-form-item>
+					 	    <el-input v-model="formInline.user" placeholder=""></el-input>
+					 	  </el-form-item>
+					 	  
+					 	  <el-form-item>
+					 	    <el-button type="submit" @click="onSubmit">查询</el-button>
+					 	  </el-form-item>
+					 	</el-form>
+					</el-col>
+				
+				
+
+   		  	</el-row>
+	   		  	
+			<el-row>
+				<el-menu
+				  :default-active="activeIndex2"
+				  class="el-menu-demo nav"
+				  mode="horizontal"
+				  @select="handleSelect"
+				  background-color="#fafafa">
+				  <el-menu-item index="1">首页</el-menu-item>
+				  <el-menu-item index="2"><a href="https://www.ele.me" target="_blank">这个新闻</a></el-menu-item>
+				  <el-menu-item index="1">那个新闻</el-menu-item>
+				</el-menu>
+			</el-row>
+
+			<el-main>
+
+			  <el-row :gutter="20"  class="main">
+				<!--主新闻-->
+			  	<el-col :xs="24" :sm="24" :md="18" :lg="18" :xl="18">
+					<h3 class="new-col"><a class="" href="###">长大在线</a></h3>
+					<el-col>
+						<p class="new-title">发来的就是家里的事会计法</p>
+					</el-col>
+
+				   <el-col :span="24">
+				   	<a class="pic-new" href="###">
+				   		<img class="imgAdap" src="img/disco.jpg">
+				   	</a>
+				   	<p>躁动了整个 2017 的「智能音箱」市场，终于来到了「刺刀见红」拼销量的时候。这个双十一的到来，将标识出这个市场下一阶段的方向。
+
+直接又残暴的价格战，将这个市场真正点燃。
+
+距离今年双十一不到三周的时候，阿里率先把标价 499 元的天猫精灵 X1 砍掉 400 元——通过提前预订、优惠券等方式，面向淘宝「超级会员」推出了 99 元的价格；很快，京东旗下、原价 399 元的叮咚音箱 TOP 也向京东 Plus 用户开出了 49 元的优惠价格。</p><a href="">sdad</a>
+				   </el-col>
+
+				   
+
+			       
+
+			    </el-col>
+				<!--侧边新闻-->
+			 	<el-col :xs="12" :sm="12" :md="6" :lg="6" :xl="6" class="aside">
+		    		<h2>今日热点</h2>
+						<el-col :span="24">
+				    		<a href="###"  class="aside-news">
+								<img class="imgAdap" src="img/disco.jpg">
+								<p>hfdkhjfdkjfdshjlkjfdsd</p>
+					    	</a>
+						</el-col>
+
+						<el-col :span="24">
+				    		<a href="###" class="aside-news">
+								<img class="imgAdap" src="img/rh.jpg">
+								<p>hfdkhjfdkjfdshjlkjfdsd</p>
+					    	</a>
+						</el-col>
+
+						<el-col :span="24">
+				    		<a href="###"  class="aside-news">
+								<img class="imgAdap" src="img/disco.jpg">
+								<p>hfdkhjfdkjfdshjlkjfdsd</p>
+					    	</a>
+						</el-col>
+
+						<el-col :span="24">
+				    		<a href="###"  class="aside-news">
+								<img class="imgAdap" src="img/disco.jpg">
+								<p>hfdkhjfdkjfdshjlkjfdsd</p>
+					    	</a>
+						</el-col>
+
+						<el-col :span="24">
+				    		<a href="###"  class="aside-news">
+								<img class="imgAdap" src="img/disco.jpg">
+								<p>hfdkhjfdkjfdshjlkjfdsd</p>
+					    	</a>
+						</el-col>
+					
+		    	</el-col>
+
+
+		    	
+
+			  </el-row>
+
+			</el-main>
+
+	   		<!--页脚-->
+   			<el-row class="footer">
+				<el-footer>
+					  <el-col :xs="24" :sm="24" :md="10" :lg="10" :xl="10" :offset="0" class="contact">
+							<h2>联系我们</h2>
+							<p>QQ：319265902</p>
+							<p> 微信：yuol2013</p>
+							<p>地址：荆州市荆州区南环路1号</p>
+							<p>长江大学东校区</p>
+						
+					  </el-col>
+
+					  <el-col :span="6" :offset="1" class="about">
+							<h2>关于我们</h2>
+							<p>长大在线</p>
+							<p>长大在线</p>
+							<p>长大在线</p>
+						
+					  </el-col>
+					  <el-col :span="6" :offset="1" class="wechat">
+					  		<img src="./img/wechat.png">
+					  </el-col>
+				</el-footer>  
+   			</el-row>
+	   		
+		
+	  </div>
+</body>
+  <!-- 先引入 Vue -->
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <!-- 引入组件库 -->
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+  <script src="js/main.js"></script>
+ 
+</html>

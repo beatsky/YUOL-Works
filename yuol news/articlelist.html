@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1, IE=edge">
+  <meta http-equiv="X-UA-Compatible" content="IE=9">
+  <meta name="force-rendering" content="webkit">
+  <!-- 引入样式 -->
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	  <div id="app">
+	   	<!--头部,导航栏-->	
+   		  	<el-row>
+				
+					<el-col :xs="4" :sm="12" :md="12" :lg="12" :xl="12">
+						<img class="logo" src="./img/logo.jpg">
+					</el-col>
+					<el-col :xs="20" :sm="12" :md="12" :lg="12" :xl="12">
+						<el-form :inline="true" :model="formInline" class="demo-form-inline search"  method="post" action="">
+					 	  <el-form-item>
+					 	    <el-input v-model="formInline.user" placeholder=""></el-input>
+					 	  </el-form-item>
+					 	  
+					 	  <el-form-item>
+					 	    <el-button type="submit" @click="onSubmit">查询</el-button>
+					 	  </el-form-item>
+					 	</el-form>
+					</el-col>
+				
+				
+
+   		  	</el-row>
+	   		  	
+			<el-row>
+				<el-menu
+				  :default-active="activeIndex2"
+				  class="el-menu-demo nav"
+				  mode="horizontal"
+				  @select="handleSelect"
+				  background-color="#fafafa">
+				  <el-menu-item index="1">首页</el-menu-item>
+				  <el-menu-item index="2"><a href="https://www.ele.me" target="_blank">这个新闻</a></el-menu-item>
+				  <el-menu-item index="1">那个新闻</el-menu-item>
+				</el-menu>
+			</el-row>
+
+			<el-main>
+			 	<!--图片新闻-->
+				  <el-row :gutter="5" class="picture">
+				    <el-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
+				    	<a class="pic-new" href="###">
+				    		<img class="imgAdap" src="img/disco.jpg">
+				    		<p>LiVE is Smile AlwaysLiVE is Smile AlwaysLiVE is Smile AlwaysLiVE is Smile AlwaysLiVE is Smile AlwaysLiVE is Smile Always</p>
+				    	</a>
+				    </el-col>
+				 
+			    	<el-col :xs="12" :sm="12" :md="6" :lg="6" :xl="6">
+			    		<a class="pic-new pic-up" href="###">
+				    		<img class="imgAdap" src="img/disco.jpg">
+				    	</a>
+			    	</el-col>
+			    	<el-col :xs="12" :sm="12" :md="6" :lg="6" :xl="6">
+			    		<a class="pic-new pic-up" href="###">
+				    		<img class="imgAdap" src="img/disco.jpg">
+				    	</a>
+			    	</el-col>
+			    	<el-col :xs="12" :sm="12" :md="6" :lg="6" :xl="6">
+			    		<a class="pic-new pic-down" href="###">
+				    		<img class="imgAdap" src="img/disco.jpg">
+				    		<p>LiVE is Smile AlwaysLiVE is Smile Always</p>
+				    	</a>
+			    	</el-col>
+			    	<el-col :xs="12" :sm="12" :md="6" :lg="6" :xl="6">
+			    		<a class="pic-new pic-down" href="###">
+				    		<img class="imgAdap" src="img/disco.jpg">
+				    		<p>LiVE is Smile AlwaysLiVE is Smile Always</p>
+				    	</a>
+			    	</el-col>
+
+				  </el-row>
+
+			  <el-row :gutter="0"  class="main">
+				<!--主新闻-->
+			  	<el-col :xs="24" :sm="24" :md="18" :lg="18" :xl="18">
+
+				   <el-col>
+				   		<h1>
+				   			<i style="text-transform: capitalize;">friday</i><i>/10.3</i>
+				   		</h1>
+				   </el-col>
+
+			       <el-col class="main-news">
+			    	   	<el-col :xs="12" :sm="12" :md="10" :lg="10" :xl="10">
+				    		<a class="" href="###">
+					    		<img class="imgAdap" src="img/disco.jpg">
+					    	</a>
+			    	  	</el-col>
+
+			    	  	<el-col :xs="12" :sm="12" :md="14" :lg="14" :xl="14">
+									<h3><a class="" href="###">LiSA</a></h3>
+									<a class="link" href="###">LiSA LiVE is Smile Always</a>
+									<p>LiVE is Smile AlwaysLiVE is Smile AlwaysLiVE is Smile Always</p>
+						</el-col>
+		    	   </el-col>
+
+		    	   <el-col>
+		    	   		<h1>
+		    	   			<i style="text-transform: capitalize;">friday</i><i>/10.3</i>
+		    	   		</h1>
+		    	   </el-col>
+
+		    	   <el-col class="main-news" :span="24">
+			    	   	<el-col :xs="12" :sm="12" :md="10" :lg="10" :xl="10" >
+				    		<a class="" href="###">
+					    		<img class="imgAdap" src="img/rh.jpg">
+					    	</a>
+			    	  	</el-col>
+
+			    	  	<el-col :xs="12" :sm="12" :md="14" :lg="14" :xl="14">
+									<h3><a class="" href="###">LiSA</a></h3>
+									<a class="link" href="###">LiSA LiVE is Smile Always</a>
+									<p>LiVE is Smile AlwaysLiVE is Smile AlwaysLiVE is Smile Always</p>
+								</el-col>
+		    	   </el-col>
+
+		    	   <el-col class="main-news">
+			    	   	<el-col :xs="12" :sm="12" :md="10" :lg="10" :xl="10">
+				    		<a class="" href="###">
+					    		<img class="imgAdap" src="img/disco.jpg" style="margin:0">
+					    	</a>
+			    	  	</el-col>
+
+			    	  	<el-col :xs="12" :sm="12" :md="14" :lg="14" :xl="14">
+									<h3><a class="" href="###">LiSA</a></h3>
+									<a class="link" href="###">LiSA LiVE is Smile Always</a>
+									<p>LiVE is Smile AlwaysLiVE is Smile AlwaysLiVE is Smile AlwaysLiVE is Smile AlwaysLiVE is Smile AlwaysLiVE is Smile Always</p>
+						</el-col>
+		    	   </el-col>
+
+					<el-button style="width: 95%;margin: 0 auto;display: block;">加载更多</el-button>
+
+			    </el-col>
+				<!--侧边新闻-->
+			 	<el-col :xs="12" :sm="12" :md="6" :lg="6" :xl="6" class="aside">
+		    		<h2>今日热点</h2>
+						<el-col :span="24">
+				    		<a href="###"  class="aside-news">
+								<img class="imgAdap" src="img/disco.jpg">
+								<p>hfdkhjfdkjfdshjlkjfdsd</p>
+					    	</a>
+						</el-col>
+
+						<el-col :span="24">
+				    		<a href="###" class="aside-news">
+								<img class="imgAdap" src="img/rh.jpg">
+								<p>hfdkhjfdkjfdshjlkjfdsd</p>
+					    	</a>
+						</el-col>
+
+						<el-col :span="24">
+				    		<a href="###"  class="aside-news">
+								<img class="imgAdap" src="img/disco.jpg">
+								<p>hfdkhjfdkjfdshjlkjfdsd</p>
+					    	</a>
+						</el-col>
+
+						<el-col :span="24">
+				    		<a href="###"  class="aside-news">
+								<img class="imgAdap" src="img/disco.jpg">
+								<p>hfdkhjfdkjfdshjlkjfdsd</p>
+					    	</a>
+						</el-col>
+
+						<el-col :span="24">
+				    		<a href="###"  class="aside-news">
+								<img class="imgAdap" src="img/disco.jpg">
+								<p>hfdkhjfdkjfdshjlkjfdsd</p>
+					    	</a>
+						</el-col>
+					
+		    	</el-col>
+
+
+		    	
+
+			  </el-row>
+
+			</el-main>
+
+	   		<!--页脚-->
+   			<el-row class="footer">
+				<el-footer>
+					  <el-col :xs="24" :sm="24" :md="10" :lg="10" :xl="10" :offset="0" class="contact">
+							<h2>联系我们</h2>
+							<p>QQ：319265902</p>
+							<p> 微信：yuol2013</p>
+							<p>地址：荆州市荆州区南环路1号</p>
+							<p>长江大学东校区</p>
+						
+					  </el-col>
+
+					  <el-col :span="6" :offset="1" class="about">
+							<h2>关于我们</h2>
+							<p>长大在线</p>
+							<p>长大在线</p>
+							<p>长大在线</p>
+						
+					  </el-col>
+					  <el-col :span="6" :offset="1" class="wechat">
+					  		<img src="./img/wechat.png">
+					  </el-col>
+				</el-footer>  
+   			</el-row>
+	   		
+		
+	  </div>
+</body>
+  <!-- 先引入 Vue -->
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <!-- 引入组件库 -->
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+  <script src="js/main.js"></script>
+ 
+</html>

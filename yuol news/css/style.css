@@ -1,0 +1,218 @@
+html,body,li,ul,a{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+}
+a{
+	color: black;
+}
+a:hover{
+	color: #409EFF!important;
+}
+/*elementui 调整*/
+.el-row {
+    margin-bottom: 0px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+.el-col {
+	border-radius: 0px;
+}
+.el-main,.nav-main{
+	width: 90%;
+	margin: 0 auto;
+}
+
+/*头部,导航栏*/
+.logo{
+	height: 50px;
+	width: auto;
+	margin: 15px 0 0 15%;
+}
+.search{
+	float: right!important;
+	margin: 20px 12% 0 0;
+}
+.nav{
+	background: #fafafa;
+	color: #666;
+}
+.nav li{
+	background: #fafafa;
+	color: #666!important;
+	font-weight: bold;
+	font-size: 16px;
+}
+.nav li:hover{
+	background: #fafafa!important;
+	color: #409EFF!important;
+	border-bottom: 5px solid #409EFF!important;
+	transition: all .6s ease;
+}
+
+/*图片新闻*/
+.imgAdap{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.pic-new {
+	display: block;
+	position: relative;
+}
+.pic-new p{
+	position: absolute;
+	bottom: 0px;
+	margin: 30px;
+	color: #fff;
+}
+.picture a{
+	overflow: hidden;
+}
+.picture img:hover{
+	transition: transform .5s ease;
+	transform:scale(1.1,1.1);
+	display: block;
+}
+.pic-up{
+	margin: 0 0 10px 5px;
+}
+.pic-down{
+	margin-left: 5px;
+}
+
+/*主新闻*/
+.main{
+	margin-top: 60px;
+}
+.main-news{
+	margin-bottom: 40px;
+}
+.main-news h3{
+	margin-left: 20px;
+}
+.main-news p,.main-news .link{
+	margin-left: 30px;
+	margin-right: 40px;
+}
+.main-news p{
+	margin-top: 35px;
+	color: rgba(0,0,0,.6);
+}
+.main-news h3 a{
+	background: #dcdcdc;
+	padding: 0 5px;
+	text-align: center;
+}
+.main-news a{
+	font-size: 20px;
+}
+.new-hov:hover{
+	background: #FFF;
+}
+.new-hov{
+	background: #FFF;
+	margin: 0;
+}
+
+/*侧边栏新闻*/
+.aside{
+	border: 1px solid #ccc;
+}
+.aside h2{
+ 	margin-left: 18px;
+ }
+.aside-news{
+	margin: 15px!important;
+	margin-top: 20px;
+	display: block;
+}
+
+/*页脚*/
+.footer{
+	width: 100%;
+	height: 300px;
+	background: #1D8CE0;
+	color: #fff;
+}
+.footer h2{
+	margin-top: 50px;
+}
+.footer img{
+	width: 150px;
+	margin-top: 70px;
+	}
+.contact{
+	text-indent: 30%;
+}
+
+
+@media screen and (max-width: 991px) {
+
+.aside{
+	display: none;
+}
+ 
+
+.pic-up{
+	margin: 10px 0;
+}
+.pic-down{
+	margin-left: 0;
+}
+
+
+
+.contact{
+	text-indent: 0;
+	text-align: center;
+}
+.wechat,.about{
+	display: none;
+}
+}
+@media screen and (max-width: 700px) {
+.el-main{
+	width: 100%;
+}
+.pic-new p{
+	margin: 10px;
+	font-size: 10px;
+}
+.main{
+	margin-top: 20px;
+}
+.main-news a{
+	font-size: 13px;
+}
+.main-news p{
+	display: none;
+}
+.main-news h3{
+	font-size: 15px;
+	margin-top:15px;
+	margin-bottom: 5px;
+}  
+.main-news{
+	margin-bottom: 20px;
+}
+.search{
+	margin: 15px auto;
+}
+.logo{
+	margin: 10px 0 0 15%;
+}
+}
+
+/*内容页*/
+.new-title{
+	font-size: 30px;
+	padding: 0;
+	font-weight: bold;
+}
+.new-col a{
+	margin: 10px;
+	padding: 5px;
+	background: #dcdcdc;
+}
